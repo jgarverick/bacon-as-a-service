@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Help";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>API Reference</h1>
+<h2 id="standard">Standard (Pretty HTML)</h2>
+<article style="min-height:400px;">
+    <ul>
+        <li>
+            <b>/Flip/:flipCount</b><br />
+            Method: GET<br />
+            This will flip your bacon for you.<br />
+            Try it: <input id="flipCount" class="input-sm" /><input onclick="window.location = '/Flip/' + flipCount.value;" class="btn btn-default" value="Try me!" />
+        </li>
+
+        <li>
+            <b>/Coma/</b><br />
+            Method: GET<br />
+            This will send you into a salty, delicious coma.<br />
+            <input onclick="window.location = '/Coma/';" class="btn btn-default" value="Try me!" />
+        </li>
+        <li>
+            <b>/Cook/:args</b><br />
+            Method: POST<br />
+            This will cook your bacon.  You have a variety of options here, so choose wisely.<br />
+            <form method="post" action="/Cook">
+                <ul class="table table-responsive" style="list-style-type:none;">
+                    <li>Cook Time (minutes): <br /><input id="CookTime" name="CookTime" class="input-sm" /></li>
+                    <li>Amount (Weight in pounds or kilos): <br /><input id="Weight" name="Weight" class="input-sm" /></li>
+                    <li>Use Metric Weight: <select class="form-control" style="width:100px;" id="UseMetricWeight" name="UseMetricWeight"><option value="false">No</option><option value="true">Yes</option></select></li>
+                    <li>
+                        Cooking Method: <select id="medium" name="Medium" class="form-control" style="width:300px;">
+    <option value="0">Frying Pan</option>
+    <option value="2">Microwave Oven</option>
+    <option value="1">Conventional Oven</option>
+    <option value="4">Blowtorch</option>
+    <option value="3">Campfire</option>
+    <option value="5">Hobo Stove</option>
+</select>
+                    </li>
+                    <li>Cook Temperature (will convert to Celsius if Use Metric is "Yes"): <br /><input class="input-sm" name="Temp" id="Temp" /></li>
+                </ul><input class="btn" type="submit" value="Try me!" />
+            </form>
+        </li>
+    </ul>
+</article>
+<h2 id="webapi">Web API (Ugly JSON and uglier XML)</h2>
+<article>
+    More to come soon.  I'm working on it.
+</article>
