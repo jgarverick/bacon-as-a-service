@@ -12,7 +12,7 @@ namespace BxAAS
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.Register(RouteTable.Routes); 
-            GlobalConfiguration.Configuration.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
+            //GlobalConfiguration.Configuration.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
         }
     }
 }

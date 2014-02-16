@@ -26,6 +26,11 @@ namespace BxAAS.Controllers
             return View("BaconCard", Bacon.Cook(new BaconEventArgs() { Weight = 10 }));
         }
 
+        public ActionResult Pirate()
+        {
+            return View("BaconCard", new BaconResult() { Title = "Bacon of the Sea", Message = "Arr! There be some pork in ye booty!" });
+        }
+
         public ActionResult Flip(int? flipCount)
         {
             var model = new BaconResult() { Title="Flip" };

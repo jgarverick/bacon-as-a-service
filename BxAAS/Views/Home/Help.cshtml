@@ -6,12 +6,13 @@
 <h1>API Reference</h1>
 <h2 id="standard">Standard (Pretty HTML)</h2>
 <article style="min-height:400px;">
-    <ul>
+    <ul style="list-style-type:none;">
         <li>
             <b>/Flip/:flipCount</b><br />
             Method: GET<br />
             This will flip your bacon for you.<br />
-            Try it: <input id="flipCount" class="input-sm" /><input onclick="window.location = '/Flip/' + flipCount.value;" class="btn btn-default" value="Try me!" />
+            Number of times to flip: <input id="flipCount" class="input-sm" /><br/>
+            <input onclick="window.location = '/Flip/' + flipCount.value;" class="btn btn-default" value="Try me!" />
         </li>
 
         <li>
@@ -40,8 +41,16 @@
 </select>
                     </li>
                     <li>Cook Temperature (will convert to Celsius if Use Metric is "Yes"): <br /><input class="input-sm" name="Temp" id="Temp" /></li>
-                </ul><input class="btn" type="submit" value="Try me!" />
+                <li><input class="btn" type="submit" value="Try me!" /></li>
+                </ul>
             </form>
+        </li>
+
+        <li>
+            <b>/Yarr</b><br />
+            Method: GET<br />
+            This will give your bacon the personality of a pirate.<br />
+            <input onclick="window.location = '/Yarr';" class="btn btn-default" value="Try me!" />
         </li>
     </ul>
 </article>

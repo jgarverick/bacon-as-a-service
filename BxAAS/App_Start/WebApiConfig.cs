@@ -13,11 +13,20 @@ namespace BxAAS
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
+            config.Routes.MapHttpRoute(
+                name: "CookApi",
+                routeTemplate: "bapi/cook",
+                defaults: new { controller = "Bacon", action = "Post" }
+            );
+            config.Routes.MapHttpRoute(
+                name: "PirateApi",
+                routeTemplate: "bapi/yarr",
+                defaults: new { controller = "Bacon", action = "GetPirate" }
+            );
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "bapi/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "bapi/{controller}/{action}/{id}",
+                defaults: new { controller="Bacon", action="Get", id = RouteParameter.Optional }
             );
         }
     }

@@ -17,6 +17,10 @@ namespace BxAAS
                 "Help",
                 new { controller = "Home", action = "Help" });
             config.MapRoute(
+             "PirateBacon",
+             "Yarr",
+             new { controller = "Bacon", action = "Pirate" });
+            config.MapRoute(
                 "BaconCooker",
                 "Cook",
                 new { controller = "Bacon", action = "Cook" });

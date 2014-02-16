@@ -132,7 +132,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\Api\AsciiController.cs" />
+    <Compile Include="Controllers\Api\BaconController.cs" />
     <Compile Include="Controllers\BaconController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Custom\Bacon.cs" />
@@ -147,6 +147,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Help.cshtml" />
     <Content Include="Views\Bacon\BaconCard.cshtml" />
+    <Content Include="Views\Shared\_NoNavLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
