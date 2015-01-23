@@ -3,7 +3,7 @@ general:
 checkout:
   pre:
     - git clone --recursive git://github.com/mono/mono.git
-    - cd mono
+    - cd mono/mono
     - sudo apt-get install -yq autogen automake
     - bash -c autogen.sh prefix=/usr
     - make
