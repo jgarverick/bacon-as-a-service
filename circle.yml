@@ -1,3 +1,3 @@
 dependencies:
-pre:
-  - sudo yum install mono-complete
+  pre:
+    - sudo yum install mono-complete
