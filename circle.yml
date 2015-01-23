@@ -3,7 +3,7 @@ general:
 checkout:
   post:
     - curl --location 'https://nuget.org/nuget.exe' -o ./.nuget/NuGet.exe
-    - xbuild /p:Configuration=Release ./BxAAS.sln
+    - xbuild /p:Configuration=Release ./bxaas.tests/bxaas.tests.csproj
 dependencies:
   pre:
     - sudo apt-get install mono-devel
