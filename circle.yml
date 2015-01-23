@@ -2,12 +2,11 @@ general:
   build_dir: ./
 checkout:
   pre:
-    - git clone git://github.com/mono/mono.git
-    - cd mono && ls
-    - git submodule update --init --recursive
+    - git clone --recursive git://github.com/mono/mono.git
+    - cd mono
     - sudo ./configure
-    - make
-    - make install
+    - sudo make
+    - sudo make install
   post:
     - curl --location 'https://nuget.org/nuget.exe' -o ./.nuget/NuGet.exe
     - xbuild /p:Configuration=Release ./BxAAS.sln
