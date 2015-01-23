@@ -3,6 +3,7 @@ general:
 checkout:
   pre:
     - git clone git://github.com/mono/mono.git
+    - git submodule update --init --recursive
     - cd mono
     - sudo ./configure
     - make
