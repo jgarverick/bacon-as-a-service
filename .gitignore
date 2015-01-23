@@ -7,7 +7,7 @@
 *.sln.docstates
 
 # Build results
-
+packages/
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -149,3 +149,4 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
+*.sln.ide/
