@@ -4,7 +4,6 @@ checkout:
   pre:
     - git clone --recursive git://github.com/mono/mono.git
     - cd mono
-    - sudo ./configure
     - sudo make
     - sudo make install
   post:
