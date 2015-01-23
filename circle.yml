@@ -1,6 +1,12 @@
 general:
   build_dir: ./
 checkout:
+  pre:
+    - git clone git://github.com/mono/mono.git
+    - cd mono
+    - sudo ./configure
+    - make
+    - make install
   post:
     - curl --location 'https://nuget.org/nuget.exe' -o ./.nuget/NuGet.exe
     - xbuild /p:Configuration=Release ./BxAAS.sln
@@ -8,11 +14,6 @@ checkout:
 dependencies:
   pre:
     - sudo apt-get install mono-devel
-    - git clone git://github.com/mono/mono.git
-    - cd mono
-    - sudo ./configure
-    - make
-    - make install
 test:
   override:
     - mono ./packages/xunit.runners.1.9.2/tools/xunit.console.exe ./bxaas.tests/bin/Release/bxaas.tests.dll
