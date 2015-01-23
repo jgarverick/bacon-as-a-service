@@ -4,7 +4,7 @@ checkout:
   post:
     - curl --location 'https://nuget.org/nuget.exe' -o ./.nuget/NuGet.exe
     - xbuild /p:Configuration=Release ./BxAAS.sln
-	- docker ps -a
+    - docker ps -a
 dependencies:
   pre:
     - sudo apt-get install mono-devel
