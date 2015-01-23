@@ -4,8 +4,9 @@ checkout:
   pre:
     - git clone --recursive git://github.com/mono/mono.git
     - cd mono
-    - sudo make
-    - sudo make install
+    - ./autogen.sh prefix=/usr
+    - make
+    - make install
   post:
     - curl --location 'https://nuget.org/nuget.exe' -o ./.nuget/NuGet.exe
     - xbuild /p:Configuration=Release ./BxAAS.sln
