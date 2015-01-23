@@ -4,8 +4,8 @@ checkout:
   pre:
     - git clone --recursive git://github.com/mono/mono.git
     - cd mono && ls
-    - sudo apt-get install -yq autogen automake
-    - sudo ./autogen.sh prefix=/usr
+    - sudo apt-get install -yq autogen
+    - bash -c "autogen.sh prefix=/usr"
     - make
     - make install
   post:
@@ -14,7 +14,7 @@ checkout:
     - docker ps -a
 dependencies:
   pre:
-    - sudo apt-get install mono-devel
+    - sudo apt-get install mono-devel autogen
 test:
   override:
     - mono ./packages/xunit.runners.1.9.2/tools/xunit.console.exe ./bxaas.tests/bin/Release/bxaas.tests.dll
