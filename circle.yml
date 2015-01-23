@@ -8,7 +8,11 @@ checkout:
 dependencies:
   pre:
     - sudo apt-get install mono-devel
-    - docker create --name aspnet1 microsoft/aspnet 
+    - git clone git://github.com/mono/mono.git
+    - cd mono
+    - sudo ./configure
+    - make
+    - make install
 test:
   override:
     - mono ./packages/xunit.runners.1.9.2/tools/xunit.console.exe ./bxaas.tests/bin/Release/bxaas.tests.dll
