@@ -1,5 +1,6 @@
 checkout:
   post:
+    - curl --location 'https://nuget.org/nuget.exe' -o ./.nuget/NuGet.exe
     - xbuild ./BxAAS.sln
 dependencies:
   pre:
