@@ -1,0 +1,3 @@
+dependencies:
+post:
+	- mono ./install_packages
