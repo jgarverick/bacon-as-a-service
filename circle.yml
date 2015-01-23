@@ -1,4 +1,10 @@
+checkout:
+  post:
+    - xbuild ./BxAAS.sln
 dependencies:
   pre:
-    - sudo apt-get update
     - sudo apt-get install mono-devel
+    - docker create --name aspnet1 microsoft/aspnet 
+test:
+  override:
+    - mono ./packages/xunit.runners.1.9.2/tools/xunit.console.exe ./bxaas.tests/bin/release/bxaas.tests.dll
