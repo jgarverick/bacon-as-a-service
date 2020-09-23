@@ -1,0 +1,26 @@
+{
+  "name": "bacon-as-a-service",
+  "version": "1.0.0",
+  "description": "bacon-as-a-service ==================",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "modernizr": "^3.11.3",
+    "webpack": "^4.44.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgarverick/bacon-as-a-service.git"
+  },
+  "author": "Josh Garverick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgarverick/bacon-as-a-service/issues"
+  },
+  "homepage": "https://github.com/jgarverick/bacon-as-a-service#readme"
+}

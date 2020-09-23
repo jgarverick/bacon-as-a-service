@@ -1,0 +1,18 @@
+﻿@using BxAAS.Custom
+@model BaconResult
+
+@{
+    Layout = "~/Views/Shared/_NoNavLayout.cshtml";
+
+}
+<link href="~/css/bxaas.css" rel="stylesheet" />
+
+<div class="bacon-card">
+    <div>@{ WriteLiteral(Model.Message);}</div>
+    <div class="card-image" >
+    
+        <img alt="" src="@Model.ImageSource" style="max-width:200px;" />
+    
+    </div>
+        <div>&copy; @DateTime.Now.Year, Bacon as a Serice.</div>
+</div>
