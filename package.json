@@ -7,7 +7,7 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "modernizr": "^3.11.3",
-    "webpack": "^4.44.2"
+    "webpack": "^4.46.0"
   },
   "devDependencies": {},
   "scripts": {
