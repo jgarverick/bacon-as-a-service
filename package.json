@@ -4,10 +4,10 @@
   "description": "bacon-as-a-service ==================",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
     "modernizr": "^3.11.3",
-    "webpack": "^4.44.2"
+    "webpack": "^4.46.0"
   },
   "devDependencies": {},
   "scripts": {
