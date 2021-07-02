@@ -6,8 +6,8 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
-    "modernizr": "^3.11.7",
-    "webpack": "^4.44.2"
+    "modernizr": "^3.11.3",
+    "webpack": "^4.46.0"
   },
   "devDependencies": {},
   "scripts": {
