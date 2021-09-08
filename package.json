@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
-    "modernizr": "^3.11.3",
+    "modernizr": "^3.11.8",
     "webpack": "^4.46.0"
   },
   "devDependencies": {},
