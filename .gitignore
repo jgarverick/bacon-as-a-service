@@ -152,3 +152,5 @@ $RECYCLE.BIN/
 .DS_Store
 *.sln.ide/
 node_modules
+
+.fake
